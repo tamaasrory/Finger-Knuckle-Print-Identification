@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Finger Knuckle Print Identification</string>
+    <string name="knuckle">
+        Knuckle
+    </string>
+    <string name="capture">
+        Capture
+    </string>
+    <string name="from_file">
+        Load File
+    </string>
+    <string name="standby">
+        Camera Stand by
+    </string>
+    <string name="update">
+        Update
+    </string>
+    <string name="process">
+        Process
+    </string>
+    <string name="image_converting"><b>Image Converting</b></string>
+    <string name="capture_setting"><b>Capture Setting</b></string>
+    <string name="bpnn_setting"><b>BPNN Variable Setting</b></string>
+    <string name="pca_setting"><b>PCA Variable Setting</b></string>
+    <string name="server_setting"><b>Server Setting</b></string>
+    <string name="theme"><b>Theme</b></string>
+    <string name="preview_off">Preview Mode Off</string>
+    <string name="idetification_mode"><b>Identification Mode</b></string>
+    <string name="add_data">Add Data</string>
+    <string name="idetification">Identification</string>
+</resources>

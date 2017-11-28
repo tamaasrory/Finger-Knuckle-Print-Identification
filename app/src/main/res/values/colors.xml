@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="customeTeal">#009688</color>
+    <color name="grey200transparent">#c4eeeeee</color>
+
+    <color name="blueGrey700transparent">#d4455a64</color>
+    <color name="blueGrey700">#455a64</color>
+    <color name="blueGrey900">#293945</color>
+    <color name="colorWhite">#fafafa</color>
+
+    <color name="cyan500">#00bcd4</color>
+    <color name="green700">#2EC970</color>
+    <color name="greenAccent700">#00c853</color>
+</resources>

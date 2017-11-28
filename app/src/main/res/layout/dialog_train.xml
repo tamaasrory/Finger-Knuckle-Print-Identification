@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="19dp">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Pilih proses yang akan dilakukan \n"
+              android:textColor="@color/blueGrey900"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <Button android:id="@+id/pca_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekstraksi Ciri dengan PCA"
+                android:onClick="onPcaExtraction"
+                android:background="@color/blueGrey900"/>
+        <Button android:id="@+id/bpnn_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pelatihan Data dengan BPNN"
+                android:onClick="onBpnnTrain"
+                android:background="@color/customeTeal"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="0dp"
+                        android:text="@string/server_setting"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Server Address"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/serverAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="http://"
+                    android:text="http://"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:singleLine="true"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/capture_setting"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flash"
+                    android:textColor="@color/customeTeal"/>
+            <CheckBox
+                    android:id="@+id/flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:textColor="@color/blueGrey700"
+                    android:buttonTint="@color/customeTeal"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Range"
+                    android:textColor="@color/customeTeal"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <EditText
+                        android:id="@+id/setHeightCR"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="height"
+                        android:textAlignment="center"
+                        android:textColor="@color/blueGrey700"
+                        android:textColorHint="#ccc"
+                        android:numeric="integer"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:text=" X "/>
+
+                <EditText
+                        android:id="@+id/setWidthCR"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="width"
+                        android:textAlignment="center"
+                        android:textColor="@color/blueGrey700"
+                        android:textColorHint="#ccc"
+                        android:numeric="integer"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:text=" Pixels"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Resize"
+                    android:textColor="@color/customeTeal"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/setHeightRC"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="height"
+                        android:textAlignment="center"
+                        android:textColor="@color/blueGrey700"
+                        android:textColorHint="#ccc"
+                        android:numeric="integer"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:text=" X "/>
+
+                <EditText
+                        android:id="@+id/setWidthRC"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="width"
+                        android:textAlignment="center"
+                        android:textColor="@color/blueGrey700"
+                        android:textColorHint="#ccc"
+                        android:numeric="integer"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:text=" Pixels"/>
+            </LinearLayout>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Resolution"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/setResolution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Resolution"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Every"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/setCaptureEvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Every"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Samples for Train"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/setSamples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Sample"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Sample for Test"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/setSampleTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Sample for Test"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Capture Delay"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/setDelay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="delay"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="0dp"
+                        android:text="@string/image_converting"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Convert To Binary Image"
+                    android:textColor="@color/customeTeal"/>
+            <CheckBox
+                    android:id="@+id/binConvert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/customeTeal"
+                    android:text="Active"
+                    android:textColor="@color/blueGrey700"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Treshold"
+                    android:textColor="@color/customeTeal"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manual Treshold"
+                        android:textColor="@color/blueGrey700"/>
+                <EditText
+                        android:id="@+id/defaultTreshold"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="0"
+                        android:text="128"
+                        android:textColor="@color/blueGrey700"
+                        android:textColorHint="#ccc"
+                        android:numeric="integer"/>
+            </LinearLayout>
+            <CheckBox
+                    android:id="@+id/autoTreshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/customeTeal"
+                    android:text="Auto Treshold"
+                    android:textColor="@color/blueGrey700"/>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="0dp"
+                        android:text="@string/bpnn_setting"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Treshold"-->
+                    <!--android:textColor="@color/customeTeal"/>-->
+            <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Manual Treshold"-->
+                        <!--android:textColor="@color/blueGrey700"/>-->
+                <!--<EditText-->
+                        <!--android:id="@+id/defaultTresholdBPNN"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="0.0"-->
+                        <!--android:text="0.5"-->
+                        <!--android:textColor="@color/blueGrey700"-->
+                        <!--android:textColorHint="#ccc"-->
+                        <!--android:numeric="decimal"/>-->
+            <!--</LinearLayout>-->
+            <!--<CheckBox-->
+                    <!--android:id="@+id/autoTresholdBPNN"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:buttonTint="@color/customeTeal"-->
+                    <!--android:text="Auto Treshold"-->
+                    <!--android:textColor="@color/blueGrey700"/>-->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Max Epoch"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/maxEpoch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Epoch"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Max Error"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/targetError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Error"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="decimal"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Alpha"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/alpha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Alpha"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="decimal"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Hidden Neuron"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/neuronHidden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0 Neuron"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="0dp"
+                        android:text="@string/pca_setting"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="PCA Reduction"
+                    android:textColor="@color/customeTeal"/>
+            <EditText
+                    android:id="@+id/reduksiPCA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0 Reduction"
+                    android:textColor="@color/blueGrey700"
+                    android:textColorHint="#ccc"
+                    android:numeric="integer"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blueGrey700"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="0dp"
+                        android:text="@string/idetification_mode"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/blueGrey700"/>
+            </LinearLayout>
+            <RadioGroup android:id="@+id/identifyMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/liveIdentify"
+                             android:layout_width="wrap_content"
+                             android:buttonTint="@color/customeTeal"
+                             android:textColor="@color/blueGrey700"
+                             android:text="Live"
+                             android:layout_height="wrap_content"/>
+                <RadioButton android:id="@+id/manualIdentify"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="From File"
+                             android:textColor="@color/blueGrey700"
+                             android:buttonTint="@color/customeTeal"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
